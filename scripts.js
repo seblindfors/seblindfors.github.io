@@ -113,10 +113,10 @@
 
     // Return a winner in either case
     return (
-	  checkWinner(checkRowWise,  state, 0, state.length-1,  1) ||
-	  checkWinner(checkColWise,  state, 0, state.length-1,  1) ||
-	  checkWinner(checkDiagWise, state, 0, state.length-1,  1) ||
-	  checkWinner(checkDiagWise, state, state.length-1, 0, -1);
+	  checkAlgorithm(checkRowWise,  state, 0, state.length-1,  1) ||
+	  checkAlgorithm(checkColWise,  state, 0, state.length-1,  1) ||
+	  checkAlgorithm(checkDiagWise, state, 0, state.length-1,  1) ||
+	  checkAlgorithm(checkDiagWise, state, state.length-1, 0, -1)
     );
   };
 
