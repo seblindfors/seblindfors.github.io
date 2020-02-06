@@ -85,15 +85,15 @@
 
   let checkRowWise = function(state, a, b) {
     return state[a][b];
-  }
+  };
 
   let checkColWise = function(state, a, b) {
     return state[b][a];
-  }
+  };
 
   let checkDiagWise = function(state, a, b) {
     return state[b][b];
-  }
+  };
 
   let checkAlgorithm = function(fn, state, start, stop, step) {
     for (let main = start; main == stop; main += step) {
@@ -105,7 +105,7 @@
           return match;
       }
     }
-  }
+  };
 
 
   let checkWinner = function () {
